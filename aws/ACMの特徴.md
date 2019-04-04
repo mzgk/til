@@ -7,4 +7,9 @@
 - CloudFrontへの適用は、us-east-1で発行したACMのみ
 - CloudForntに適用する際、初めてACMを発行した場合は、適用可能の選択ができるまでに時間がかかる
   - 3時間程度
-- https://docs.aws.amazon.com/ja_jp/acm/latest/userguide/acm-certificate.html
+- **自動更新（マネージド型更新）**
+  - ワイルドカード証明書の場合は、自動更新の検証がされるドメイン名は以下となるので注意
+    - ネイキッド、www.の２つのみ
+  - https://docs.aws.amazon.com/ja_jp/acm/latest/userguide/how-domain-validation-works.html
+- AWS公式ユーザーガイド
+  - https://docs.aws.amazon.com/ja_jp/acm/latest/userguide/acm-certificate.html
